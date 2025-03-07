@@ -135,7 +135,67 @@ h4{
 .col-4:hover{
     transform: translateY(-5px);
 }
+/* Offer */
+.offer{
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: #555;
+}
 
+/* Testimonial */
+.testimonial{
+    margin-top: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+/* Brands */
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
 /* Footer */
 .footer{
     background: black;
@@ -194,38 +254,10 @@ ul{
 }
 
 /* All Products */
-/* Container for all products */
-.small-container {
-    max-width: 1080px;
-    margin: auto;
-    padding: 20px;
-}
-/* Ensure row behaves lie a flex container */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .row-2{
     justify-content: space-between;
     margin: 100px auto 50px;
 }
-/* Product columns */
-.col-4 {
-    flex: 0 0 23%;
-    max-width: 23%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-/* Made images responsive */
-.col-4 img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
 select{
     border: 1px solid #ff523b;
     padding: 5px;
@@ -250,7 +282,6 @@ select:focus{
     background: #ff523b;
     color: white;
 }
-
 
 /* Single Product */
 .single-product{
@@ -357,13 +388,30 @@ th:last-child{
 .form-container{
     background: #fff;
     width: 300px;
-    height: 400px;
+    height: 430px;
     position: relative;
     text-align: center;
     padding: 20px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+.message-container{
+    background: #fff;
+    width: 300px;
+    height: fit-content;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
 }
 .form-container span{
     font-weight: bold;
@@ -468,20 +516,3 @@ form a{
         display: none;
     }
 }
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .col-4 {
-        flex: 0 0 48%; /* 2 columns for tablets */
-        max-width: 48%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .col-4 {
-        flex: 0 0 100%; /* 1 column for mobile */
-        max-width: 100%;
-    }
-}
-
-/* All products */

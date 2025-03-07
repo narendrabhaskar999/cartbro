@@ -9,7 +9,7 @@ class Customer(models.Model):
     address=models.TextField()
     user=models.OneToOneField(User,on_delete=models.CASCADE,related_name='customer_profile')
     phone=models.CharField(max_length=15)
-    delete_status=models.IntegerField()
+    delete_status=models.BooleanField(default=False)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
