@@ -340,6 +340,18 @@ table{
     display: flex;
     flex-wrap: wrap;
 }
+.cart-item-image {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.cart-info-image {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
 th{
     text-align: left;
     padding: 5px;
@@ -514,5 +526,13 @@ form a{
     }
     .cart-info p{
         display: none;
+    }
+
+    .cart-page table{
+        font-size: 12px;
+    }
+
+    .cart-item-image {
+        width: 60px;
     }
 }
